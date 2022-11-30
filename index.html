@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale =1">
+	<title>MY WEBSITE</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section id="banner">
+		<img src="logo.png" class="logo">
+		<div class="banner-text">
+			<h1>MUSTY DIGITALS</h1>
+			<p>We deliver quality and affordable designs...</p>
+			<div class="banner-btn">
+				<a href="#"><span></span>Find out</a>
+				<a href="#"><span></span>Read more</a>
+		</div>
+	</section>
+	<!---side nav--->
+	<div id="sideNav">
+		<nav>
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">SERVICES</a></li>
+				<li><a href="#">GALLERY</a></li>
+				<li><a href="about.html">ABOUT US</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="menuBtn">
+		<img src="menu.png">
+	</div>
+    
+    <!---Features---->
+
+    <section id="feature">
+    	<div class="title-text">
+    		<p>FEATURES</p>
+    		<h1>What We Offer</h1>
+    	</div>
+    <div class="row">
+    	<div class="feature-col">
+    		<h3>Graphics Design</h3>
+    		<p>Graphics design is said to be the art of profession of visual communications that combines images, words, and ideas to cinvey information to an audience... Here at Musty Digitals we create stunning Designs e.g. Logo designs, e-flyers,banners,etc.
+    		You can check some of our designs in our gallery.</p>
+    	</div>
+    	<div class="feature-col">
+    		<h3>Web Development</h3>
+    		<p>We create and maintain websites.We are also responsible for the site's technical aspects, such as itts performance and capacity, which are measures of a website's speed and how much traffic the site can handle...In addition, we also create contents for sale.</p>
+    	</div>
+    	<div class="feature-col">
+    		<h3>3D Modelling and Animations</h3>
+    		<p>Firstly,3D Modelling is the process of developing mathematical coordinate-based representation of any surface of an object in three dimensions via specialized software by manipulating edges, vertices and polygons to form your desired model or character...Here are some of the softwares that i would recommend;Blender, 3DMaya,etc </p>
+    	</div>
+    </div>
+    </section>
+
+	<script>
+		var menuBtn = document.getElementById("menuBtn")
+		var sideNav = document.getElementById("sideNav")
+		var menu = document.getElementById("menu")
+
+		menuBtn.onclick = function () {
+			if(sideNav.style.right == "-250px"){
+				sideNav.style.right = "0";
+				menu.src = "menu.png";
+		}
+		    else{
+		    	sideNav.style.right = "-250px";
+		    }
+		}
+	</script>
+</body>
+</html>
